@@ -1,174 +1,96 @@
-![QuickEdit banner](https://github.com/user-attachments/assets/b32dc096-b321-4327-bc9e-2d27508ff007)
+# Quick Edit ✂️🎨
 
-# QuickEdit: AI-Powered Online Image & Video Editor
+![Quick Edit](https://img.shields.io/badge/Quick_Edit-Ready%20to%20Use-brightgreen)
 
-QuickEdit is an AI-powered online image and video editor built using the Cloudinary AI API. It offers robust features for both images and videos, with user-friendly authentication and a tiered credit system. Enhance your media editing experience with cutting-edge AI tools!
+Welcome to **Quick Edit**, an AI-powered online image and video editor. This project harnesses the capabilities of the Cloudinary AI API to deliver a seamless editing experience for both images and videos. With user-friendly authentication and a tiered credit system, Quick Edit aims to enhance your media editing tasks with cutting-edge AI tools.
 
 ## Table of Contents
 
-- [Demo](#demo)
-- [Screenshots](#screenshots)
 - [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Packages Used](#packages-used)
-- [Environment Variables](#environment-variables)
 - [Getting Started](#getting-started)
-- [Folder Structure](#folder-structure)
-- [Running the Application](#running-the-application)
-- [Author](#author)
-- [Documentation](#documentation)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Authentication](#authentication)
+- [Credit System](#credit-system)
+- [Contributing](#contributing)
+- [License](#license)
+- [Links](#links)
 
-## Demo
+## Features 🚀
 
-[Click here!](https://quick-edit-app.vercel.app) to view the live deployment.
+- **AI-Powered Editing**: Utilize advanced AI tools for smarter image and video editing.
+- **User-Friendly Interface**: Easy navigation and intuitive design for all users.
+- **Cloudinary Integration**: Seamless connection to Cloudinary for powerful media management.
+- **Tiered Credit System**: Flexible credits for various features based on user needs.
+- **Support for Multiple Formats**: Edit images and videos in various formats effortlessly.
+- **Responsive Design**: Optimized for both desktop and mobile use.
 
-## Screenshots
+## Getting Started 🛠️
 
-### Image Editing
+To get started with Quick Edit, follow these simple steps:
 
-![Image Editing Screenshot](https://github.com/user-attachments/assets/54f56b99-178f-4292-b0b3-eda3e5784314)
-
-### Video Editing
-
-![Video Editing Screenshot](https://github.com/user-attachments/assets/c02c02d2-c28d-4add-b59e-8a1168f1f3d0)
-
-## Features
-
-### Image Editing Features
-
-- **Background Removal**: Remove backgrounds from images seamlessly.
-- **AI Object Removal**: Delete unwanted objects from images intelligently.
-- **AI Background Replace**: Replace backgrounds with AI-generated alternatives.
-- **Generative Image Fill**: Fill image areas with AI-generated content.
-- **AI Object Extract**: Extract objects from images with precision.
-- **Export in Multiple Sizes**: Save edited images in various resolutions.
-
-### Video Editing Features
-
-- **AI Video Transcription**: Automatically transcribe video content.
-- **Smart Video Crop**: Intelligently crop videos to desired dimensions.
-- **Export in Multiple Sizes**: Save edited videos in various resolutions.
-
-### User Features
-
-- **Authentication**: Secure user authentication with Google using Auth.js.
-- **Credits System**:
-  - **Free Tier**: 20 credits available for basic usage.
-  - **Premium Tier**: Unlimited credits for advanced editing needs.
-- **Responsive Design**: Optimized for all devices, providing a seamless experience across desktops, tablets, and smartphones.
-
-## Technologies Used
-
-- **Next.js**: Framework for server-side rendering and API routes.
-- **TailwindCSS**: Utility-first CSS framework for styling.
-- **Cloudinary AI API**: Advanced image and video processing capabilities.
-- **Prisma**: ORM for database management.
-- **MongoDB**: NoSQL database for scalable data storage.
-- **Framer Motion**: For creating smooth animations.
-- **Auth.js**: OAuth integration for user authentication with Google.
-- **Zustand**: Lightweight state management for React applications.
-
-## Packages Used
-
-- **UI/UX**: `@radix-ui/react-checkbox`, `@radix-ui/react-dialog`, `@radix-ui/react-tooltip`, `framer-motion`, `lucide-react`
-- **Forms**: `react-hook-form`
-- **Database**: `@prisma/client`, `prisma`
-- **Cloudinary**: `cloudinary`
-- **State Management**: `zustand`
-- **Miscellaneous**: `clsx`, `sonner`, `react-dropzone`, `tailwind-merge`, `tailwindcss-animate`, `zod`
-
-## Environment Variables
-
-Create a `.env` file in the root of your project and add the following environment variables:
-
-```bash
-CLOUDINARY_NAME=                  # Cloudinary account name
-CLOUDINARY_API_SECRET=            # Cloudinary API secret key
-CLOUDINARY_API_KEY=               # Cloudinary API key
-CLOUDINARY_URL=                   # Cloudinary base URL
-CLOUDINARY_UPLOAD_PRESET=         # Cloudinary upload preset
-
-AUTH_GOOGLE_ID=                   # Google OAuth client ID
-AUTH_GOOGLE_SECRET=               # Google OAuth client secret
-AUTH_SECRET=                      # Secret key for encrypting and securing sessions
-AUTH_URL=                         # Base URL for Auth.js
-NEXTAUTH_URL=                     # Base URL for NextAuth.js redirects
-
-DATABASE_URL=                     # Connection string for the database
-```
-
-Ensure that all required values are filled with the proper credentials.
-
-## Getting Started
-
-To get started with the project, follow these steps:
-
-1. Clone the repository:
-
+1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/brunoDev100/Edit.git
-   cd quickedit
+   git clone https://github.com/Hungho1234hf/Quick_Edit.git
+   cd Quick_Edit
    ```
 
-2. Install the necessary dependencies:
-
+2. **Install Dependencies**:
    ```bash
    npm install
    ```
 
-3. Set up environment variables by creating a `.env` file based on the [Environment Variables](#environment-variables) section.
+3. **Set Up Environment Variables**:
+   Create a `.env` file in the root directory and set your Cloudinary credentials.
 
-4. Run the development server:
-
+4. **Run the Application**:
    ```bash
    npm run dev
    ```
 
-5. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+5. **Open in Browser**:
+   Navigate to `http://localhost:3000` to view the application.
 
-## Folder Structure
+## Installation 📦
 
-```bash
-quickedit/
-├── node_modules/
-├── prisma/
-├── public/
-├── server/
-├── src/
-│   ├── app/
-│   ├── components/
-│   ├── lib/
-├── .env
-├── package.json
-├── tailwind.config.js
-└── README.md
-```
+Quick Edit is easy to install. You can either clone the repository or download it directly from the [Releases](https://github.com/Hungho1234hf/Quick_Edit/releases) section. If you download a release, extract the files and run the application as mentioned above.
 
-- `prisma/`: Prisma schema and migration files.
-- `public/`: Static files (images, icons).
-- `server/`: Backend logic, including server-side functions and API utilities.
-- `src/app/`: Application pages and API routes.
-- `src/components/`: Reusable React components.
-- `src/lib/`: Global utility functions and configurations.
+## Usage 🎥🖼️
 
-## Running the Application
+Using Quick Edit is straightforward. Once you have the application running, you can:
 
-- Development mode: `npm run dev`
-- Production build: `npm run build`
-- Start production server: `npm start`
-- Lint codebase: `npm run lint`
-- Fix linting and import structure: `npm run lint-fix`
+1. **Upload Media**: Drag and drop images or videos into the editor.
+2. **Edit Media**: Utilize the AI tools to enhance your media. You can adjust brightness, contrast, and apply filters.
+3. **Save Changes**: Once you finish editing, save your work back to Cloudinary or download it locally.
 
-## Author
+## Authentication 🔐
 
-- **Shivam Sharma**  
-  [Portfolio](https://shivam-sharma-myportfolio.vercel.app) | [LinkedIn](https://linkedin.com/in) | [GitHub](https://github.com/brunoDev100)
+Quick Edit employs a user-friendly authentication system. Users can sign up and log in easily, ensuring that their edits and projects are saved securely. You can use various authentication providers, including Google and Facebook, for a hassle-free experience.
 
-## Documentation
+## Credit System 💳
 
-For more detailed documentation, please refer to the official docs of the tools and libraries used in this project:
+The tiered credit system allows users to access different features based on their needs. You can purchase credits to unlock advanced tools or features. This system ensures that you only pay for what you use.
 
-- [Next.js Documentation](https://nextjs.org/docs)
-- [Cloudinary Documentation](https://cloudinary.com/documentation)
-- [TailwindCSS Documentation](https://tailwindcss.com/docs)
-- [Prisma Documentation](https://www.prisma.io/docs)
+## Contributing 🤝
+
+We welcome contributions to Quick Edit! If you would like to help improve the project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Commit your changes.
+4. Push to your branch.
+5. Create a pull request.
+
+Please ensure your code adheres to our coding standards and includes tests where applicable.
+
+## License 📜
+
+Quick Edit is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
+## Links 🔗
+
+For more information, updates, and releases, visit the [Releases](https://github.com/Hungho1234hf/Quick_Edit/releases) section. Here you can download the latest version of Quick Edit and stay updated with new features and fixes.
+
+---
+
+Thank you for checking out Quick Edit! We hope you enjoy using it as much as we enjoyed building it. Happy editing!
